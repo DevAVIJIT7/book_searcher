@@ -46,3 +46,9 @@ gem 'devise', '~> 3.5', '>= 3.5.3'
 gem 'mongoid_search'
 gem 'faker'
 gem 'pry'
+
+group :production do
+  #use postgres on heroku
+  gem 'pg'
+  gem 'rails_12factor'
+end 
